@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BrewGuide Support - Get help with pour-over coffee brewing, timer features, custom recipes, and troubleshooting.">
+    <meta name="keywords" content="BrewGuide support, pour over help, coffee timer, brewing guide">
+    <title>BrewGuide Support - Help & FAQ</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FAFAFA;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #5D4037 0%, #3E2723 100%);
+            color: white;
+            padding: 60px 20px 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .contact-box {
+            background: white;
+            border: 2px solid #5D4037;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 30px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .contact-box h2 {
+            color: #5D4037;
+            margin-bottom: 15px;
+        }
+
+        .email {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #007AFF;
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px 20px;
+            background: #F0F8FF;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .email:hover {
+            background: #E0F0FF;
+        }
+
+        .response-time {
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        main {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #5D4037;
+            font-size: 1.8em;
+            margin: 30px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #5D4037;
+        }
+
+        h3 {
+            color: #3E2723;
+            font-size: 1.3em;
+            margin: 25px 0 15px 0;
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #F9F9F9;
+            border-left: 4px solid #5D4037;
+            border-radius: 6px;
+        }
+
+        .faq-item h4 {
+            color: #5D4037;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .faq-item p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-card {
+            background: #F5F5F5;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 3px solid #5D4037;
+        }
+
+        .feature-card h4 {
+            color: #3E2723;
+            margin-bottom: 10px;
+        }
+
+        .system-requirements {
+            background: #FFF8E1;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #FFA000;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #5D4037;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #5D4037;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2em; }
+            main { padding: 20px; }
+            .feature-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>☕ BrewGuide Support</h1>
+        <p>Master Your Pour-Over Coffee Brewing</p>
+    </header>
+
+    <div class="container">
+        <div class="contact-box">
+            <h2>Need Help?</h2>
+            <p>We're here to help you brew the perfect cup. Contact us with questions, feedback, or technical issues.</p>
+            <a href="mailto:support@xappnova.com" class="email">support@xappnova.com</a>
+            <p class="response-time">We typically respond within 24 hours</p>
+        </div>
+
+        <main>
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h4>How do I start my first brew?</h4>
+                <p>Launch BrewGuide, select a pre-loaded profile like "V60 Morning Brew," gather your equipment (dripper, filter, kettle, scale, coffee beans), then tap "Start Brewing." The timer will guide you through each step automatically.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Can I customize the default recipes?</h4>
+                <p>Absolutely! Tap any profile, then tap "Edit" to adjust bloom time, pour intervals, water amounts, coffee ratios, and more. You can also duplicate profiles to experiment without losing the original.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>How do I create a custom dripper profile?</h4>
+                <p>From the profile list, tap the "+" button. Enter a name, select "Custom" as the dripper type, enter your custom dripper name, and configure all brewing parameters. Save when done.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Do I need an internet connection?</h4>
+                <p>No! BrewGuide works completely offline. All profiles, recipes, and taste notes are stored locally on your device. No account or login required.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>How do I add taste notes to a brew?</h4>
+                <p>After completing a brewing session, you'll see an option to add taste notes. You can also access them anytime by opening a profile and tapping "Taste Notes."</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Can I disable audio and haptic feedback?</h4>
+                <p>Yes! Go to Settings and toggle "Sound Effects" and "Haptic Feedback" on or off according to your preference.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>How do I switch between Celsius and Fahrenheit?</h4>
+                <p>Go to Settings → "Preferred Temperature Unit" and select your preference. All temperatures throughout the app will update automatically.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>What happens if I get a phone call during brewing?</h4>
+                <p>The timer continues running in the background. When you return to the app, you'll see the current step and elapsed time.</p>
+            </div>
+
+            <h2>Troubleshooting</h2>
+
+            <div class="faq-item">
+                <h4>The timer won't start or is frozen</h4>
+                <p>Try force-closing the app and reopening it. On iPhone: swipe up from the bottom, find BrewGuide, swipe it away, then relaunch. If the issue persists, restart your device.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>I don't hear audio cues</h4>
+                <p>Check your device's volume and the mute switch. Also ensure "Sound Effects" is enabled in BrewGuide Settings. Audio may be disabled if your device is in silent mode.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>My profiles disappeared after updating</h4>
+                <p>This is rare but can happen during major iOS updates. Your data is stored locally—check if you have an iCloud backup to restore from. Contact support if you need assistance.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>The app crashes on launch</h4>
+                <p>First, ensure you're running iOS 17.0 or later. Then delete and reinstall the app. Note: This will erase your custom profiles unless you have an iCloud backup.</p>
+            </div>
+
+            <h2>Features Overview</h2>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>⏱️ Smart Timer</h4>
+                    <p>Auto-advancing timer with step-by-step guidance through bloom, pour, and drawdown phases.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h4>🎥 Video Guides</h4>
+                    <p>Looping technique demonstrations show you exactly how to execute each pour.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h4>📝 Custom Recipes</h4>
+                    <p>Create unlimited profiles with full control over timing, ratios, and steps.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h4>📔 Taste Journal</h4>
+                    <p>Track your brews with ratings and notes to refine your technique.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h4>🎨 Themes</h4>
+                    <p>Four beautiful background themes to match your kitchen aesthetic.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h4>🔒 Privacy First</h4>
+                    <p>No data collection, no tracking. Everything stays on your device.</p>
+                </div>
+            </div>
+
+            <h2>System Requirements</h2>
+
+            <div class="system-requirements">
+                <p><strong>Device:</strong> iPhone or iPad<br>
+                <strong>Operating System:</strong> iOS 17.0 or later<br>
+                <strong>Storage:</strong> Approximately 50 MB<br>
+                <strong>Internet:</strong> Not required (works completely offline)<br>
+                <strong>Permissions:</strong> None required</p>
+            </div>
+
+            <h2>Supported Drippers</h2>
+
+            <ul>
+                <li><strong>Hario V60</strong> (01, 02, 03) - Plastic, Ceramic, Glass, Metal</li>
+                <li><strong>Kalita Wave</strong> (155, 185)</li>
+                <li><strong>Chemex</strong> (3-cup, 6-cup, 8-cup)</li>
+                <li><strong>Origami Dripper</strong> (S, M, L)</li>
+                <li><strong>Fellow Stagg</strong> [X] and [XF]</li>
+                <li><strong>Melitta</strong></li>
+                <li><strong>Custom Drippers</strong> - Add your own with full customization</li>
+            </ul>
+
+            <h2>Feature Requests & Feedback</h2>
+
+            <p>We're constantly improving BrewGuide based on user feedback. Have an idea for a new feature? Found something that could work better? We'd love to hear from you at <a href="mailto:support@xappnova.com">support@xappnova.com</a>.</p>
+
+            <h3>Roadmap <span class="badge">Coming Soon</span></h3>
+            <ul>
+                <li>Bluetooth scale integration for automatic weight tracking</li>
+                <li>iCloud sync across devices</li>
+                <li>Profile sharing with the community</li>
+                <li>Apple Watch companion app</li>
+                <li>Advanced brewing analytics</li>
+            </ul>
+
+            <h2>Privacy & Data</h2>
+
+            <p>BrewGuide does not collect, transmit, or share any of your personal data. All brewing profiles, taste notes, and settings are stored locally on your device using Apple's secure SwiftData framework. Your data is included in your device's iCloud backup if you have that feature enabled.</p>
+
+            <p>For complete details, please review our <a href="privacy.html">Privacy Policy</a>.</p>
+
+            <h2>Contact Information</h2>
+
+            <p><strong>Support Email:</strong> <a href="mailto:support@xappnova.com">support@xappnova.com</a><br>
+            <strong>Developer:</strong> XAppNova<br>
+            <strong>Response Time:</strong> Within 24 hours on business days</p>
+
+            <p style="margin-top: 30px; padding: 20px; background: #F0F8FF; border-radius: 8px; text-align: center;">
+                <strong>Thank you for using BrewGuide!</strong><br>
+                We hope every cup you brew brings you joy. Happy brewing! ☕
+            </p>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 XAppNova. All rights reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="https://apps.apple.com/app/brewguide">App Store</a>
+        </p>
+        <p style="margin-top: 10px; color: #999; font-size: 0.85em;">
+            BrewGuide v1.0 • iOS 17.0+
+        </p>
+    </footer>
+</body>
+</html>
