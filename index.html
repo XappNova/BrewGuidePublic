@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BrewGuide - Support and Privacy Pages">
-    <title>BrewGuide</title>
+    <meta name="description" content="BrewGuide - Your personal pour-over coffee coach. Master V60, Kalita, Chemex brewing with step-by-step guidance, precision timing, and video demonstrations. $4.99 on the App Store.">
+    <meta name="keywords" content="pour over coffee, coffee timer, V60, Kalita Wave, Chemex, brewing guide, coffee app, specialty coffee, barista">
+    <meta property="og:title" content="BrewGuide - Pour Over Coffee Timer">
+    <meta property="og:description" content="Perfect your pour-over technique with step-by-step guidance and precision timing">
+    <meta property="og:type" content="website">
+    <title>BrewGuide - Perfect Pour-Over Coffee Every Time</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -12,104 +16,322 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
+            background: #FAFAFA;
+        }
+
+        /* Hero Section */
+        .hero {
             background: linear-gradient(135deg, #5D4037 0%, #3E2723 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .container {
-            background: white;
-            padding: 60px 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            text-align: center;
-            max-width: 500px;
-            width: 100%;
-        }
-
-        h1 {
-            color: #5D4037;
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        .tagline {
-            color: #666;
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        a {
-            display: block;
-            padding: 18px 30px;
-            background: #5D4037;
             color: white;
-            text-decoration: none;
-            border-radius: 10px;
+            padding: 80px 20px 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero .tagline {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+
+        .hero .subtitle {
             font-size: 1.1em;
-            font-weight: 600;
+            opacity: 0.85;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #5D4037;
+            padding: 18px 40px;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .price-tag {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        /* Features Section */
+        .features {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #5D4037;
+            margin-bottom: 50px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
             transition: all 0.3s;
         }
 
-        a:hover {
-            background: #3E2723;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(93, 64, 55, 0.3);
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
         }
 
-        .footer {
-            margin-top: 40px;
-            padding-top: 30px;
-            border-top: 2px solid #eee;
-            color: #999;
-            font-size: 0.9em;
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
         }
 
-        .footer a {
-            background: none;
+        .feature-card h3 {
             color: #5D4037;
-            padding: 0;
-            font-size: 0.9em;
-            display: inline;
+            font-size: 1.4em;
+            margin-bottom: 10px;
         }
 
-        .footer a:hover {
-            transform: none;
-            box-shadow: none;
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Supported Drippers */
+        .drippers {
+            background: linear-gradient(135deg, #F5F5F5 0%, #E8E8E8 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .drippers h2 {
+            font-size: 2.2em;
+            color: #5D4037;
+            margin-bottom: 30px;
+        }
+
+        .dripper-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .dripper-badge {
+            background: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 600;
+            color: #5D4037;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Privacy Banner */
+        .privacy-banner {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 40px;
+            background: #E8F5E9;
+            border-left: 5px solid #4CAF50;
+            border-radius: 10px;
+        }
+
+        .privacy-banner h3 {
+            color: #2E7D32;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .privacy-banner p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        /* Screenshots Section */
+        .screenshots {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .screenshots h2 {
+            font-size: 2.5em;
+            color: #5D4037;
+            margin-bottom: 40px;
+        }
+
+        .screenshot-placeholder {
+            background: linear-gradient(135deg, #5D4037 0%, #3E2723 100%);
+            color: white;
+            padding: 80px 40px;
+            border-radius: 20px;
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background: #3E2723;
+            color: white;
+            padding: 50px 20px 30px;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 0.7;
             text-decoration: underline;
         }
 
-        @media (max-width: 600px) {
-            .container { padding: 40px 20px; }
-            h1 { font-size: 2.5em; }
+        .copyright {
+            opacity: 0.7;
+            font-size: 0.9em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5em; }
+            .hero .tagline { font-size: 1.2em; }
+            .features h2, .screenshots h2 { font-size: 2em; }
+            .drippers h2 { font-size: 1.8em; }
+            .feature-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
         <h1>☕ BrewGuide</h1>
-        <p class="tagline">Master Your Pour-Over Coffee Brewing</p>
+        <p class="tagline">Perfect Pour-Over Coffee Every Time</p>
+        <p class="subtitle">Your personal brewing coach with step-by-step guidance, precision timing, and video demonstrations</p>
+        <a href="https://apps.apple.com/app/brewguide" class="cta-button">Download on App Store</a>
+        <p class="price-tag">$4.99 • No subscriptions • No ads</p>
+    </section>
 
-        <div class="links">
-            <a href="support.html">📖 Support & FAQ</a>
-            <a href="privacy.html">🔒 Privacy Policy</a>
-        </div>
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Everything You Need to Brew Better Coffee</h2>
 
-        <div class="footer">
-            <p>&copy; 2026 XAppNova. All rights reserved.</p>
-            <p style="margin-top: 10px;">
-                <a href="https://apps.apple.com/app/brewguide">Download on App Store</a>
-            </p>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⏱️</div>
+                <h3>Smart Timer</h3>
+                <p>Auto-advancing step-by-step timer guides you through each phase with precision. Never miss a pour again.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎬</div>
+                <h3>Video Guides</h3>
+                <p>Watch looping demonstrations of proper pouring techniques for each step. Learn from visual examples.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">☕</div>
+                <h3>Multiple Drippers</h3>
+                <p>Optimized recipes for V60, Kalita Wave, Chemex, Origami, and more. Each dripper has tailored timing.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+                <h3>Custom Profiles</h3>
+                <p>Create unlimited brewing profiles. Save your favorite recipes and tweak every parameter.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📖</div>
+                <h3>Taste Notes</h3>
+                <p>Journal your results with ratings and notes. Track what works and improve over time.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Beautiful Themes</h3>
+                <p>Choose from wood, metal, white, or dark aesthetics. Personalize your brewing experience.</p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Supported Drippers -->
+    <section class="drippers">
+        <h2>Supported Brewing Methods</h2>
+        <div class="dripper-list">
+            <span class="dripper-badge">Hario V60</span>
+            <span class="dripper-badge">Kalita Wave</span>
+            <span class="dripper-badge">Chemex</span>
+            <span class="dripper-badge">Origami Dripper</span>
+            <span class="dripper-badge">Fellow Stagg</span>
+            <span class="dripper-badge">Custom Recipes</span>
+        </div>
+    </section>
+
+    <!-- Privacy Banner -->
+    <section class="privacy-banner">
+        <h3>🔒 Your Privacy Matters</h3>
+        <p><strong>Zero data collection.</strong> All your profiles, notes, and settings stay on your device. No accounts, no tracking, no servers. Just you and your perfect cup of coffee.</p>
+    </section>
+
+    <!-- Screenshots Placeholder -->
+    <section class="screenshots">
+        <h2>See BrewGuide in Action</h2>
+        <div class="screenshot-placeholder">
+            📱 App Screenshots Coming Soon 📱<br>
+            <span style="font-size: 0.8em; opacity: 0.8;">Beautiful interface • Intuitive workflow • Designed for iOS 17+</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="support.html">Support & FAQ</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="https://apps.apple.com/app/brewguide">App Store</a>
+            <a href="mailto:support@xappnova.com">Contact</a>
+        </div>
+        <p class="copyright">&copy; 2026 XAppNova. All rights reserved.</p>
+    </footer>
 </body>
 </html>
