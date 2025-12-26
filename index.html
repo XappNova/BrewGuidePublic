@@ -178,7 +178,7 @@
 
         /* Screenshots Section */
         .screenshots {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 80px auto;
             padding: 0 20px;
             text-align: center;
@@ -190,13 +190,52 @@
             margin-bottom: 40px;
         }
 
-        .screenshot-placeholder {
-            background: linear-gradient(135deg, #5D4037 0%, #3E2723 100%);
-            color: white;
-            padding: 80px 40px;
+        .screenshot-gallery {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px 0;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .screenshot-gallery::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .screenshot-gallery::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .screenshot-gallery::-webkit-scrollbar-thumb {
+            background: #5D4037;
+            border-radius: 10px;
+        }
+
+        .screenshot-item {
+            flex: 0 0 auto;
+            width: 280px;
+            scroll-snap-align: start;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            height: auto;
             border-radius: 20px;
-            font-size: 1.3em;
-            opacity: 0.9;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .screenshot-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .screenshot-caption {
+            margin-top: 15px;
+            color: #666;
+            font-size: 0.95em;
+            font-weight: 500;
         }
 
         /* Footer */
@@ -314,12 +353,34 @@
         <p><strong>Zero data collection.</strong> All your profiles, notes, and settings stay on your device. No accounts, no tracking, no servers. Just you and your perfect cup of coffee.</p>
     </section>
 
-    <!-- Screenshots Placeholder -->
+    <!-- Screenshots Gallery -->
     <section class="screenshots">
         <h2>See BrewGuide in Action</h2>
-        <div class="screenshot-placeholder">
-            📱 App Screenshots Coming Soon 📱<br>
-            <span style="font-size: 0.8em; opacity: 0.8;">Beautiful interface • Intuitive workflow • Designed for iOS 17+</span>
+        <div class="screenshot-gallery">
+            <div class="screenshot-item">
+                <img src="1.Splash.png" alt="BrewGuide Splash Screen">
+                <p class="screenshot-caption">Welcome Screen</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="2.Home_Screen.png" alt="Profile List - Home Screen">
+                <p class="screenshot-caption">Your Brewing Profiles</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="3.Customization.png" alt="Profile Customization">
+                <p class="screenshot-caption">Customize Every Detail</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="4.Brewing_Timer.png" alt="Active Brewing Session">
+                <p class="screenshot-caption">Step-by-Step Guidance</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="5.Taste_Notes.png" alt="Taste Notes Journal">
+                <p class="screenshot-caption">Track Your Brews</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="6.FAQ.png" alt="FAQ & Support">
+                <p class="screenshot-caption">Built-in FAQ</p>
+            </div>
         </div>
     </section>
 
